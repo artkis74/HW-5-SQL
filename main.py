@@ -1,6 +1,6 @@
 import psycopg2
 
-with psycopg2.connect(database="clients_db", user="postgres", password="K.,bvfz777") as conn:
+with psycopg2.connect(database="clients_db", user="postgres", password="postgres") as conn:
     with conn.cursor() as cur:
         cur.execute("""
         DROP TABLE phone;
